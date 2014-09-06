@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-parent</artifactId>
+        <version>1.1.4.RELEASE</version>
+    </parent>
+
+    <groupId>com.esha.spring.boot</groupId>
+    <artifactId>spring-boot-starter-axon</artifactId>
+    <version>0.1-SNAPSHOT</version>
+
+    <name>Spring Boot Axon Starter</name>
+    <inceptionYear>2014</inceptionYear>
+
+    <organization>
+        <name>ESHA Research</name>
+        <url>http://www.esha.com/</url>
+    </organization>
+
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <id>celkins</id>
+            <name>Christopher Elkins</name>
+            <email>chrise at esha.com</email>
+        </developer>
+    </developers>
+
+    <prerequisites>
+        <maven>3.0.0</maven>
+    </prerequisites>
+
+    <scm>
+        <connection>scm:git:git://github.com/esha/spring-boot-starter-axon.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/esha/spring-boot-starter-axon.git</developerConnection>
+        <url>https://github.com/esha/spring-boot-starter-axon</url>
+    </scm>
+
+    <issueManagement>
+        <system>Github</system>
+        <url>https://github.com/esha/spring-boot-starter-axon/issues</url>
+    </issueManagement>
+
+    <ciManagement>
+        <system>Travis CI</system>
+        <url>https://travis-ci.org/esha/spring-boot-starter-axon</url>
+    </ciManagement>
+
+    <properties>
+        <axon.version>2.3.1</axon.version>
+        <java.version>1.7</java.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.axonframework</groupId>
+            <artifactId>axon-core</artifactId>
+            <version>${axon.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+</project>
