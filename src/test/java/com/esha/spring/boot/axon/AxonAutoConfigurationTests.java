@@ -3,6 +3,7 @@ package com.esha.spring.boot.axon;
 import org.axonframework.commandhandling.CommandBus;
 import org.axonframework.commandhandling.CommandHandler;
 import org.axonframework.commandhandling.gateway.CommandGateway;
+import org.axonframework.domain.IdentifierFactory;
 import org.axonframework.eventhandling.EventBus;
 import org.axonframework.eventhandling.EventListener;
 import org.axonframework.eventhandling.annotation.EventHandler;
@@ -41,6 +42,7 @@ public class AxonAutoConfigurationTests {
         assertNotNull(this.context.getBean(CommandGateway.class));
         assertNotNull(this.context.getBean(EventBus.class));
         assertNotNull(this.context.getBean(EventStore.class));
+        assertNotNull(this.context.getBean(IdentifierFactory.class));
     }
 
     @Test

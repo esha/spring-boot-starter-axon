@@ -8,6 +8,7 @@ import org.axonframework.commandhandling.SimpleCommandBus;
 import org.axonframework.commandhandling.annotation.AnnotationCommandHandlerBeanPostProcessor;
 import org.axonframework.commandhandling.gateway.CommandGateway;
 import org.axonframework.commandhandling.gateway.DefaultCommandGateway;
+import org.axonframework.domain.IdentifierFactory;
 import org.axonframework.eventhandling.EventBus;
 import org.axonframework.eventhandling.SimpleEventBus;
 import org.axonframework.eventhandling.annotation.AnnotationEventListenerBeanPostProcessor;
@@ -62,4 +63,9 @@ public class AxonAutoConfiguration {
         return bean;
     }
 
+    @Bean
+    @ConditionalOnMissingBean
+    public IdentifierFactory identifierFactory() {
+        return IdentifierFactory.getInstance();
+    }
 }
