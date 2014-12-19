@@ -11,7 +11,7 @@
 
     <groupId>com.esha.spring.boot</groupId>
     <artifactId>spring-boot-starter-axon</artifactId>
-    <version>0.1.1-SNAPSHOT</version>
+    <version>0.2.0</version>
 
     <name>Spring Boot Axon Starter</name>
     <inceptionYear>2014</inceptionYear>
@@ -45,7 +45,7 @@
         <connection>scm:git:git://github.com/esha/spring-boot-starter-axon.git</connection>
         <developerConnection>scm:git:ssh://git@github.com/esha/spring-boot-starter-axon.git</developerConnection>
         <url>https://github.com/esha/spring-boot-starter-axon</url>
-      <tag>HEAD</tag>
+      <tag>0.2.0</tag>
   </scm>
 
     <issueManagement>
